@@ -156,7 +156,7 @@ void opcontrol() {
 			barrel_target_position+=180;
 		}
 
-		barrel_motor.move(0.25*(barrel_target_position-barrel_motor.get_position()));
+		barrel_motor.move(0.5*(barrel_target_position-barrel_motor.get_position()));
 		pros::delay(20);
 	}
 }
